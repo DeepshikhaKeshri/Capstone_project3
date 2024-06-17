@@ -1,0 +1,35 @@
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+
+header form {
+    margin-top: 10px;
+}
+
+header input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+header button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+footer {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #ccc;
+}

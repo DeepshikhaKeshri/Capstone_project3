@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail App</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <h1>Cocktail List</h1>
+        <% if (error) { %>
+            <p>
+                <%= error %>
+            </p>
+            <% } else { %>
+                <ul>
+                    <% cocktails.forEach(cocktail=> { %>
+                        <li>
+                            <img src="<%= cocktail.strDrinkThumb %>/preview" alt="<%= cocktail.strDrink %>" width="100"
+                                height="100">
+                            <%= cocktail.strDrink %>
+                        </li>
+                        <% }) %>
+                </ul>
+                <% } %>
+        
+    <%- include('partials/footer') %>
+</body>
+
+</html>
